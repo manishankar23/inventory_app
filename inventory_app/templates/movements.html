@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="card shadow p-4">
+  <h3 class="text-primary mb-3">Product Movements</h3>
+
+  <form method="POST" class="row g-3 mb-4">
+    <div class="col-md-3">
+      <select name="product_id" class="form-select" required>
+        <option value="">Select Product</option>
+        {% for p in products %}
+        <option value="{{ p['product_id'] }}">{{ p['name'] }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div class="col-md-3">
+      <select name="from_location" class="form-select">
+        <option value="">From (optional)</option>
+        {% for l in locations %}
+        <option value="{{ l['location_id'] }}">{{ l['name'] }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div class="col-md-3">
+      <select name="to_location" class="form-select">
+        <option value="">To (optional)</option>
+        {% for l in locations %}
+        <option value="{{ l['location_id'] }}">{{ l['name'] }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div class="col-md-2">
+      <input type="number" name="qty" class="form-control" placeholder="Qty" required>
+    </div>
+    <div class="col-md-1">
+      <button type="submit" class="btn btn-success w-100">Move</button>
+    </div>
+  </form>
+
+  <table class="table table-hover table-bordered">
+    <thead class="table-dark">
+      <tr>
+        <th>ID</th><th>Product</th><th>From</th><th>To</th><th>Qty</th><th>Timestamp</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for m in movements %}
+      <tr>
+        <td>{{ m['movement_id'] }}</td>
+        <td>{{ m['product_id'] }}</td>
+        <td>{{ m['from_location'] or '-' }}</td>
+        <td>{{ m['to_location'] or '-' }}</td>
+        <td>{{ m['qty'] }}</td>
+        <td>{{ m['timestamp'] }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}
