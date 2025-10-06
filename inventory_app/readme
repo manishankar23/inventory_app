@@ -1,1 +1,26 @@
+# Inventory Management Application
 
+This is a Flask-based inventory management system with the following features:
+
+- Add, delete, and view products
+- Add, delete, and view warehouse locations
+- Track product movements between locations
+- Generate stock reports and highlight low-stock products
+
+## Screenshots
+
+
+### Products Page
+![Products](screenshots/products.png)
+
+### Locations Page
+![Locations](screenshots/locations.png)
+
+### Product Movements
+![Movements](screenshots/movements.png)
+
+### Stock Report
+![Report](screenshots/report.png)
+
+Installation Clone the repository: git clone
+ https://github.com/manishankar23/inventory_app/tree/main/inventory_app
