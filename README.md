@@ -8,8 +8,6 @@ A Flask-based app to manage products, locations, and track product movements bet
 
 \## Features
 
-
-
 \- Add / Edit / View Products
 
 \- Add / Edit / View Locations
@@ -21,8 +19,6 @@ A Flask-based app to manage products, locations, and track product movements bet
 
 
 \## Screenshots
-
-
 
 \### Products Page
 
@@ -50,11 +46,7 @@ A Flask-based app to manage products, locations, and track product movements bet
 
 \## Setup Instructions
 
-
-
-1\. \*\*Clone the repository\*\*
-
-
+1\. Clone the repo:
 
 ```bash
 
