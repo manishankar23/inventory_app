@@ -2,11 +2,17 @@
 
 
 
-A Flask-based app to manage products, locations, and track product movements between warehouses.
+A Flask-based application to manage products, locations, and track product movements between warehouses.
+
+
+
+---
 
 
 
 \## Features
+
+
 
 \- Add / Edit / View Products
 
@@ -18,7 +24,13 @@ A Flask-based app to manage products, locations, and track product movements bet
 
 
 
+---
+
+
+
 \## Screenshots
+
+
 
 \### Products Page
 
@@ -44,9 +56,17 @@ A Flask-based app to manage products, locations, and track product movements bet
 
 
 
+---
+
+
+
 \## Setup Instructions
 
-1\. Clone the repo:
+
+
+1\. \*\*Clone the repository\*\*
+
+
 
 ```bash
 
