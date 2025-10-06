@@ -8,6 +8,8 @@ A Flask-based app to manage products, locations, and track product movements bet
 
 \## Features
 
+
+
 \- Add / Edit / View Products
 
 \- Add / Edit / View Locations
@@ -20,11 +22,27 @@ A Flask-based app to manage products, locations, and track product movements bet
 
 \## Screenshots
 
+
+
+\### Products Page
+
 !\[Products](screenshots/products.png)
+
+
+
+\### Locations Page
 
 !\[Locations](screenshots/locations.png)
 
+
+
+\### Movements Page
+
 !\[Movements](screenshots/movements.png)
+
+
+
+\### Report Page
 
 !\[Report](screenshots/report.png)
 
@@ -32,31 +50,17 @@ A Flask-based app to manage products, locations, and track product movements bet
 
 \## Setup Instructions
 
-1\. Clone the repo:
 
-&nbsp;  git clone https://github.com/manishankar23/inventory\_app/tree/main/inventory\_app
 
-2\. Create virtual environment:
-
-&nbsp;  python -m venv venv
-
-&nbsp;  venv\\Scripts\\activate  # Windows
-
-3\. Install Flask:
-
-&nbsp;  pip install Flask
-
-4\. Run the app:
-
-&nbsp;  python inventory\_app/app.py
-
-5\. Open browser at http://127.0.0.1:5000
+1\. \*\*Clone the repository\*\*
 
 
 
-\## Author
+```bash
 
-Sri Abilash
+git clone https://github.com/manishankar23/inventory\_app.git
+
+cd inventory\_app
 
 
 
